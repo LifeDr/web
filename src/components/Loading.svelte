@@ -4,7 +4,7 @@
   let isShow = false;
   let isShow2 = false;
   let isShow3 = false;
-  let isShow4 = true;
+  let isShow4 = false;
 
   const init = () => {
     setTimeout(() => (isShow = true), 100);

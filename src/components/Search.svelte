@@ -1,4 +1,4 @@
-<div class="pt(50) w(100%) pack">
+<div class="pt(50) pb(50) w(100%) pack">
   <input
     class="w(80%) h(40) b(1/solid/#DADADA) r(20) p(5/15/5/15) font(14)"
     type="text"
