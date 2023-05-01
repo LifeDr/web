@@ -4,7 +4,7 @@
   let isShow = false;
   let isShow2 = false;
   let isShow3 = false;
-  let isShow4 = false;
+  let isShow4 = true;
 
   const init = () => {
     setTimeout(() => (isShow = true), 100);
@@ -17,7 +17,7 @@
 </script>
 
 {#if isShow4}
-  <div class="layer pack relative">
+  <div class="layer pack relative z(3)">
     <div class="w(100vw) h(100vh) layer bg(black)" />
     <img
       class="layer opacity(0)"
