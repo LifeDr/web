@@ -6,8 +6,6 @@
   import Search from "../components/Search.svelte";
 </script>
 
-<Loading />
-
 <Search />
 
 <div class="vbox gap(28) pb(48)">
@@ -16,3 +14,5 @@
 </div>
 
 <NextBtn />
+
+<div class="h(100)" />

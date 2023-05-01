@@ -17,18 +17,20 @@
 </script>
 
 {#if isShow4}
-  <div class="layer pack relative z(3)">
+  <div class="layer pack fixed z(3)">
     <div class="w(100vw) h(100vh) layer bg(black)" />
-    <img
-      class="layer opacity(0)"
-      class:isShow={isShow3}
-      src="drlife_background.png"
-      alt=""
-    />
+    {#if isShow2}
+      <img
+        class="layer opacity(0)"
+        class:isShow={isShow3}
+        src="drlife_background.png"
+        alt=""
+      />
+    {/if}
 
-    <div class="w(100vw) h(100vh) layer pack vbox gap(20)">
-      <div class="scale(1.5) opacity(0)" class:isShow class:origin={isShow3}>
-        <img src="Dr.svg" alt="" />
+    <div class="w(100vw) h(100vh) layer pack vbox">
+      <div class="scale(0.9) opacity(0)" class:isShow class:smaller={isShow3}>
+        <img src="Dr.png" alt="" />
       </div>
       <div
         class="c(white) pack text-align(center) vbox gap(7) opacity(0)"
@@ -50,8 +52,8 @@
       opacity: 1;
     }
   }
-  .origin {
-    transform: scale(1);
+  .smaller {
+    transform: scale(0.6);
     opacity: 1;
     transition: all ease-in-out 1.5s;
   }
