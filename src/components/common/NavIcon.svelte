@@ -3,7 +3,7 @@
   export let name: NavIconName = "home";
 </script>
 
-<div class="vbox gap(7) pack">
+<button class="vbox gap(7) pack" on:click>
   <div class="w(30) h(30)">
     {#if name === "home"}
       <svg
@@ -100,4 +100,4 @@
     {/if}
   </div>
   <div class="font(11)">{name.toUpperCase()}</div>
-</div>
+</button>

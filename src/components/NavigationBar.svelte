@@ -8,5 +8,5 @@
   <NavIcon name="home" />
   <NavIcon name="search" />
   <NavIcon name="content" />
-  <NavIcon name="my" />
+  <NavIcon name="my" on:click={() => (location.pathname = "/my")} />
 </div>
