@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { openModal } from "svelte-modals";
+  import Modal from "./Modal.svelte";
+
   export let imgUrl: string = "";
   export let brand: string = "";
   export let name: string = "";
@@ -60,7 +63,9 @@
   <div class="h(168) pt(10) vbox gap(30)">
     <div>{harmful}</div>
     <div>
-      <button class="button mb(10)">내 보관함 담기</button>
+      <button class="button mb(10)" on:click={() => openModal(Modal)}
+        >내 보관함 담기</button
+      >
       <button class="button">비교함에서 빼기</button>
     </div>
     <div />
