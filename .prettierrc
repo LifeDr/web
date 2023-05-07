@@ -1,0 +1,10 @@
+{
+  "arrowParens": "always",
+  "semi": false,
+  "bracketSpacing": false,
+  "singleQuote": false,
+  "svelteSortOrder": "options-scripts-markup-styles",
+  "trailingComma": "none",
+  "printWidth": 140,
+  "svelteIndentScriptAndStyle": false
+}

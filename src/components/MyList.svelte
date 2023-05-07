@@ -1,6 +1,6 @@
 <script>
-  import { items$ } from "../state/store";
-  import MyItem from "./common/MyItem.svelte";
+import {items$} from "../state/store"
+import MyItem from "./common/MyItem.svelte"
 </script>
 
 <div>
@@ -18,29 +18,17 @@
     </div>
     <div class="w(100)" />
     {#each $items$ as { imgUrl, brand, name, grade, funcCert, HACCP, GMP, mainCert, subCert, daily, harmful }}
-      <MyItem
-        {imgUrl}
-        {brand}
-        {name}
-        {grade}
-        {funcCert}
-        {HACCP}
-        {GMP}
-        {mainCert}
-        {subCert}
-        {daily}
-        {harmful}
-      />
+      <MyItem {imgUrl} {brand} {name} {grade} {funcCert} {HACCP} {GMP} {mainCert} {subCert} {daily} {harmful} />
     {/each}
   </div>
 </div>
 
 <style>
-  .scroll::-webkit-scrollbar {
-    display: none;
-  }
-  .scroll {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+.scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 </style>
