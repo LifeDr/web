@@ -3,11 +3,13 @@ import {openModal} from "svelte-modals"
 import Modal from "./Modal.svelte"
 import {dispatch} from "$lib/adorable"
 import {_내_비교함에_담기, _내_비교함에서_빼기_name} from "../../state/actions"
+import {GRADE_COLOR} from "../../consts"
+import type {GradeType} from "../../state/store"
 
 export let imgUrl: string = ""
 export let brand: string = ""
 export let name: string = ""
-export let grade: string = ""
+export let grade: GradeType = "C"
 export let funcCert: boolean = false
 export let HACCP: boolean = false
 export let GMP: boolean = false
@@ -36,8 +38,9 @@ const 비교함에서_빼기 = () => {
   <div class="h(34) pack bg(#F0EFEF)">
     <div class="w(16) h(16) r(50%) b(1/#000) pack">
       {#if grade}
-        <div class="w(18) h(18) r(50%) bg(#86C285) pack font(10) c(#fff) bold">
-          {grade}
+        <div class="w(18) h(18) r(50%) bg(#86C285) pack font(10) c(#fff) bold relative" style:background-color={GRADE_COLOR[grade]}>
+          {grade === "A+" ? "A" : grade}
+          <span class="absolute top(0) right(3) font(6)">{grade === "A+" ? "+" : ""}</span>
         </div>
       {/if}
     </div>
