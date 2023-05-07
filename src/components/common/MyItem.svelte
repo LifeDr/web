@@ -18,7 +18,7 @@
     <div>{brand}</div>
     <div class="bold font(16)">{name}</div>
   </div>
-  <div class="h(34) pack">
+  <div class="h(34) pack bg(#F0EFEF)">
     <div class="w(16) h(16) r(50%) b(1/#000) pack">
       {#if grade}
         <div class="w(18) h(18) r(50%) bg(#86C285) pack font(10) c(#fff) bold">
@@ -36,7 +36,7 @@
       {/if}
     </div>
   </div>
-  <div class="h(34) pack">
+  <div class="h(34) pack bg(#F0EFEF)">
     <div class="w(16) h(16) r(50%) b(1/#000) pack">
       {#if HACCP}
         <div
@@ -54,9 +54,9 @@
       {/if}
     </div>
   </div>
-  <div class="h(34) pack">{mainCert}</div>
+  <div class="h(34) pack bg(#F0EFEF)">{mainCert}</div>
   <div class="h(34) pack">{subCert}</div>
-  <div class="h(34) pack">{daily}</div>
+  <div class="h(34) pack bg(#F0EFEF)">{daily}</div>
   <div class="h(168) pt(10) vbox gap(30)">
     <div>{harmful}</div>
     <div>
