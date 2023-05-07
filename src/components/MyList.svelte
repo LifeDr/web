@@ -3,9 +3,9 @@ import {items$} from "../state/store"
 import MyItem from "./common/MyItem.svelte"
 </script>
 
-<div>
+<div class="relative">
   <div class="hbox overflow(scroll) scroll">
-    <div class="w(100) guide vbox text-align(center) font(11) absolute bg(#fff) z(3)">
+    <div class="w(100) guide vbox text-align(center) font(11) absolute bg(#fff)">
       <div class="h(191)" />
       <div class="h(34) pack bg(#F0EFEF)">등급</div>
       <div class="h(34) pack">기능성 인증</div>

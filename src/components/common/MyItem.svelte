@@ -38,9 +38,9 @@ const 비교함에서_빼기 = () => {
   <div class="h(34) pack bg(#F0EFEF)">
     <div class="w(16) h(16) r(50%) b(1/#000) pack">
       {#if grade}
-        <div class="w(18) h(18) r(50%) bg(#86C285) pack font(10) c(#fff) bold relative" style:background-color={GRADE_COLOR[grade]}>
-          {grade === "A+" ? "A" : grade}
-          <span class="absolute top(0) right(3) font(6)">{grade === "A+" ? "+" : ""}</span>
+        <div class="w(18) h(18) r(50%) bg(#86C285) pack font(10) c(#fff) bold" style:background-color={GRADE_COLOR[grade]}>
+          <span class:aplus-a={grade === "A+"}>{grade === "A+" ? "A" : grade}</span>
+          <span class="font(3) aplus">{grade === "A+" ? "+" : ""}</span>
         </div>
       {/if}
     </div>
@@ -78,3 +78,12 @@ const 비교함에서_빼기 = () => {
     <div />
   </div>
 </div>
+
+<style>
+.aplus-a {
+  transform: translate(2px, 0);
+}
+.aplus {
+  transform: translate(1px, -3px);
+}
+</style>
