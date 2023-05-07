@@ -8,3 +8,15 @@ body {
   user-select: none;
   overscroll-behavior-x: none;
 }
+
+.button {
+  background-color: #008cba; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+}
